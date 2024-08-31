@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .media-section {
+            display: block;
+            margin: 20px auto;
+            justify-content: center;
+        }
+        picture {
+            max-width: 100%;
+            height: 30px;
+            margin: 20px;
+        }
+        video, audio {
+            margin: 20px;
+            width: 70%;
+        }
+        .text-section {
+            margin: 20px;
+        }
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 3.5rem;
+            }
+            .text-section {
+                max-width: 600px;
+            }
+        }
+    </style>
+    </head>
+    <body>
+     <nav>
+        <li>
+            <ol><a href="media.html">Powerful message about me</a></ol>
+            <ol><a href="table.html">Table</a></ol>
+        </li>
+     </nav>
+     <header>
+     <h1>About Me</h1>
+     <p>Who I am and what I aspire to become</p>
+     </header>
+     <section class="text-section">
+                        <h2>Aspiring Engineer, Lifelong Learner.</h2>
+
+                        <p>Hello, my name is Latifa IGIHOZO. I am passionate about using technology
+                            to solve real-world problems. As I progress through AltSchool's School
+                            of Engineering, I am working to hone my skills in Backend Engineering.
+                            My goal is to create impactful solutions that not only help businesses
+                            grow but also a difference in people's lives.</p>
+
+                            <p> I thrive on challenges and continually set goals for myself, always
+                                looking for opportunities to improve and learn. My current focus is on
+                                building full-stack applications even if that will require me to go look 
+                                for further knowledge elsewhere, and I am more than excited to see 
+                                how that will work for me. Thank you for your time reading this and goodluck 
+                                in your daily endeavors!.</p>
+     <div class="container">
+        <section class="media-section">
+            <!-- Responsive Picture element with multiple sources-->
+            <h1>Picture</h1>
+            <picture>
+                <!--Image for large screens like laptop-->
+                <source media="(max-width: 1000px)"
+                srcset="images/me.jpg" style="margin-inline: auto">
+                <!--Image for medium screens like tablets-->
+                <source media="(max-width: 600px)"
+                srcset="images/me.jpg" style="margin-inline: auto">
+                <!--Image for small screens like mobile-->
+                <source media="(max-width: 400px)"
+                srcset="images/me.jpg" style="margin-inline: auto">
+                <!--Fallback image if none of the above sources work-->
+                <img src="images/me.jpg" alt="About Me Image" style="width: 70%; margin-inline: auto">
+                </picture>
+                <!--Video element-->
+                <h1>Video</h1>
+                <p>What I do in My free time.</p>
+                <video controls>
+                    <source src="media/intro-video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                    </video>
+                    <!--Audio element-->
+                    <h1>Audio</h1>
+                    <p>Here's one of my Favorite songs.</p>
+                    <audio controls>
+                    
+                        <source src="media/Phil Collins - Another Day In Paradise.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                    </section>
+
+                   
+</body>
+</html>
